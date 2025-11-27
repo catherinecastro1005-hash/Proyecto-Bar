@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Licorera 24/7</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <div class="sidebar" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom border-secondary">
+                <span class="brand-font text-neon-purple">Licorera</span> 24/7
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                </a>
+                <a href="#pedidos" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-shopping-bag me-2"></i>Pedidos <span class="badge rounded-pill bg-danger float-end">8</span>
+                </a>
+                <a href="#productos" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-wine-bottle me-2"></i>Inventario
+                </a>
+                <a href="#clientes" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-users me-2"></i>Clientes
+                </a>
+                <a href="#reportes" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-chart-line me-2"></i>Analíticas
+                </a>
+                <a href="index.html" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold mt-5 logout-btn">
+                    <i class="fas fa-power-off me-2"></i>Cerrar Sesión
+                </a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0 text-white fw-bold">Panel de Control</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                <img src="https://ui-avatars.com/api/?name=Admin&background=7000FF&color=fff" class="rounded-circle me-2" width="40"> Administrador
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-white" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Configuración</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                
+                <div class="row g-3 my-2">
+                    <div class="col-md-3">
+                        <div class="p-4 card-glass d-flex justify-content-between align-items-center shadow-sm">
+                            <div>
+                                <p class="mb-0 text-muted small text-uppercase">Ventas Hoy</p>
+                                <h3 class="fs-2 fw-bold text-white">$1.2M</h3>
+                            </div>
+                            <div class="icon-box-rounded bg-purple-glow">
+                                <i class="fas fa-dollar-sign fs-3 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-4 card-glass d-flex justify-content-between align-items-center shadow-sm">
+                            <div>
+                                <p class="mb-0 text-muted small text-uppercase">Pedidos</p>
+                                <h3 class="fs-2 fw-bold text-white">45</h3>
+                            </div>
+                            <div class="icon-box-rounded bg-pink-glow">
+                                <i class="fas fa-shopping-cart fs-3 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-4 card-glass d-flex justify-content-between align-items-center shadow-sm">
+                            <div>
+                                <p class="mb-0 text-muted small text-uppercase">Delivery</p>
+                                <h3 class="fs-2 fw-bold text-white">12</h3>
+                            </div>
+                            <div class="icon-box-rounded bg-blue-glow">
+                                <i class="fas fa-motorcycle fs-3 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-4 card-glass d-flex justify-content-between align-items-center shadow-sm">
+                            <div>
+                                <p class="mb-0 text-muted small text-uppercase">Stock Bajo</p>
+                                <h3 class="fs-2 fw-bold text-danger">3</h3>
+                            </div>
+                            <div class="icon-box-rounded bg-orange-glow">
+                                <i class="fas fa-exclamation-triangle fs-3 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-lg-8">
+                        <div class="card-glass p-4 h-100">
+                            <h4 class="text-white fw-bold mb-4">Pedidos Recientes</h4>
+                            <div class="table-responsive">
+                                <table class="table table-dark table-hover bg-transparent">
+                                    <thead>
+                                        <tr class="text-muted">
+                                            <th scope="col">#ID</th>
+                                            <th scope="col">Cliente</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col">Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1024</th>
+                                            <td>Juan Pérez</td>
+                                            <td>Ron Viejo de Caldas</td>
+                                            <td>$55.000</td>
+                                            <td><span class="badge bg-warning text-dark">En Camino</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1023</th>
+                                            <td>Maria L.</td>
+                                            <td>Vuse Go x2</td>
+                                            <td>$39.800</td>
+                                            <td><span class="badge bg-success">Entregado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1022</th>
+                                            <td>Carlos R.</td>
+                                            <td>Aguardiente Tapa Azul</td>
+                                            <td>$45.000</td>
+                                            <td><span class="badge bg-danger">Cancelado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1021</th>
+                                            <td>Ana Sofía</td>
+                                            <td>Cerveza Corona x6</td>
+                                            <td>$28.000</td>
+                                            <td><span class="badge bg-success">Entregado</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="btn btn-outline-light btn-sm mt-3">Ver todos los pedidos</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card-glass p-4 mb-4">
+                            <h5 class="text-white fw-bold mb-3">Más Vendidos 🔥</h5>
+                            
+                            <div class="d-flex align-items-center mb-3 p-2 hover-bg rounded">
+                                <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=100&q=80" class="rounded" width="50">
+                                <div class="ms-3">
+                                    <h6 class="text-white mb-0">Johnnie Walker</h6>
+                                    <small class="text-muted">45 Ventas esta semana</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3 p-2 hover-bg rounded">
+                                <img src="https://images.unsplash.com/photo-1599021407577-530d77d23e1a?w=100&q=80" class="rounded" width="50">
+                                <div class="ms-3">
+                                    <h6 class="text-white mb-0">Aguardiente</h6>
+                                    <small class="text-muted">38 Ventas esta semana</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center p-2 hover-bg rounded">
+                                <img src="https://images.unsplash.com/photo-1550523376-45d479d0d4b3?w=100&q=80" class="rounded" width="50">
+                                <div class="ms-3">
+                                    <h6 class="text-white mb-0">Vuse Go Mint</h6>
+                                    <small class="text-muted">30 Ventas esta semana</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-glass p-4 text-center gradient-promo">
+                            <i class="fas fa-plus-circle fs-1 text-white mb-3"></i>
+                            <h5 class="text-white">Nuevo Producto</h5>
+                            <p class="text-white-50 small">Agrega inventario rápidamente al sistema.</p>
+                            <button class="btn btn-light fw-bold rounded-pill w-100">Agregar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    <script src="Javascript/auth.js"></script>
+    <script>verificarAcceso('admin');</script>
+</body>
+</html>

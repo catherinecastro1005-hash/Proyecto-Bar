@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La mejor licorera 24/7 en Medellín. Domicilios rápidos en Aranjuez. Licores, vapes, cervezas y más.">
+    <title>La Licorera Aranjuez 24/7 - Medellín | Domicilios en Aranjuez</title>
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <!-- Top Bar Tipo Menú -->
+    <div class="top-menu-bar">
+        <div class="container">
+            <ul class="top-menu">
+                <li><a href="catalogo.html">VAPES</a></li>
+                <li><a href="catalogo.html">AGUARDIENTES</a></li>
+                <li><a href="catalogo.html">LICORES</a></li>
+                <li><a href="catalogo.html">CERVEZAS</a></li>
+                <li><a href="catalogo.html">CIGARROS</a></li>
+                <li><a href="catalogo.html">OFERTAS</a></li>
+                <li class="ms-auto"><a href="login.html" class="admin-link">Iniciar sesión como Admin</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header Principal -->
+    <header class="main-header-simple">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <!-- Logo -->
+                <div class="col-md-2">
+    <a href="index.html">
+        <img src="img/logo.png" alt="Licorera Aranjuez 24/7" class="img-fluid main-logo">
+    </a>
+</div>
+                
+                <!-- Buscador Central -->
+                <div class="col-md-7">
+                    <div class="search-wrapper">
+                        <input type="search" 
+                               class="form-control search-input-main" 
+                               placeholder="Buscar..."
+                               aria-label="Buscar productos">
+                    </div>
+                </div>
+
+                <!-- Iconos de Usuario -->
+                <div class="col-md-3 text-end">
+                    <div class="header-actions">
+                        <button class="icon-btn" aria-label="Notificaciones">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                        <button class="icon-btn" aria-label="Favoritos">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-label="Carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count-badge" class="cart-badge">0</span>
+                        </button>
+                        <button class="icon-btn" aria-label="Perfil">
+                            <i class="far fa-user-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con Texto e Imagen -->
+    <section class="hero-simple">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="hero-text-box">
+                        <h1 class="hero-title-handwritten">
+                            Los Mejores Licores<br>
+                            de Medellín
+                        </h1>
+                        <div class="hero-catalog-btn">
+                            <a href="#catalogo-anchor" class="btn-explore">Explora Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Promocional Grande con Marcas -->
+     <section class="promo-brands-section my-5">
+        <div class="container-fluid p-0">
+            <div id="carruselMarcas" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="d-flex justify-content-end pe-4 mb-2">
+                    <button class="btn btn-sm btn-light rounded-circle me-2 shadow-sm" type="button" data-bs-target="#carruselMarcas" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left text-dark"></i>
+                    </button>
+                    <button class="btn btn-sm btn-light rounded-circle shadow-sm" type="button" data-bs-target="#carruselMarcas" data-bs-slide="next">
+                        <i class="fas fa-chevron-right text-dark"></i>
+                    </button>
+                </div>
+
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400&q=80" alt="Martini">
+                                    <div class="brand-overlay">
+                                        <h3>MARTINI</h3>
+                                        <p>ESTILO ITALIANO</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="" alt="Miniaturas">
+                                    <div class="brand-overlay">
+                                        <h3>Miniaturas</h3>
+                                        <p>Pequeñas y poderosas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=400&q=80" alt="Johnnie Walker">
+                                    <div class="brand-overlay">
+                                        <h3>JOHNNIE WALKER</h3>
+                                        <p>Keep Walking</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?w=400&q=80" alt="Mare de Prades">
+                                    <div class="brand-overlay">
+                                        <h3>MARE DE PRADES</h3>
+                                        <p>Top Ventas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1598692543229-d4c0fefd8300?w=400&q=80" alt="Premium">
+                                    <div class="brand-overlay">
+                                        <h3>PREMIUM</h3>
+                                        <p>Selección Especial</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1582037928769-181f2644ecb7?w=400&q=80" alt="Whisky">
+                                    <div class="brand-overlay">
+                                        <h3>WHISKY</h3>
+                                        <p>Malta Pura</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&q=80" alt="Cocteles">
+                                    <div class="brand-overlay">
+                                        <h3>COCTELES</h3>
+                                        <p>Listos para servir</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="brand-card">
+                                    <img src="https://images.unsplash.com/photo-1612204987108-b0bd2c54df55?w=400&q=80" alt="Ginebra">
+                                    <div class="brand-overlay">
+                                        <h3>GINEBRA</h3>
+                                        <p>Botánicos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+     
+   
+
+    <!-- Categorías con Círculos Grandes -->
+    <section class="categories-section" id="catalogo-anchor">
+        <div class="container">
+            <h2 class="section-title-simple">¿Qué vamos a tomar?</h2>
+            
+            <div class="row justify-content-center g-4">
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-item" onclick="filtrarCategoria('Vape')">
+                        <div class="category-circle-large p-0 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1550523376-45d479d0d4b3?w=300&q=80" 
+                                 alt="Vape" 
+                                 style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
+                        </div>
+                        <h6 class="category-title">Vapeadores</h6>
+                        <p class="category-count">Ver productos <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-item" onclick="filtrarCategoria('Vodka')">
+                        <div class="category-circle-large p-0 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1617134826274-6c5296972249?w=300&q=80" 
+                                 alt="Vodka" 
+                                 style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
+                        </div>
+                        <h6 class="category-title">Vodka</h6>
+                        <p class="category-count">Ver productos <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-item" onclick="filtrarCategoria('Ron')">
+                        <div class="category-circle-large p-0 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614313511387-1436a4480ebb?w=300&q=80" 
+                                 alt="Ron" 
+                                 style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
+                        </div>
+                        <h6 class="category-title">Rones</h6>
+                        <p class="category-count">Ver productos <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-item" onclick="filtrarCategoria('Aguardiente')">
+                        <div class="category-circle-large p-0 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1599021407577-530d77d23e1a?w=300&q=80" 
+                                 alt="Aguardiente" 
+                                 style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
+                        </div>
+                        <h6 class="category-title">Aguardiente</h6>
+                        <p class="category-count">Ver productos <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-item" onclick="filtrarCategoria('Tequila')">
+                        <div class="category-circle-large p-0 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1516535794938-6063878f08cc?w=300&q=80" 
+                                 alt="Tequila" 
+                                 style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
+                        </div>
+                        <h6 class="category-title">Tequilas</h6>
+                        <p class="category-count">Ver productos <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-item" onclick="filtrarCategoria('Cerveza')">
+                        <div class="category-circle-large p-0 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=300&q=80" 
+                                 alt="Cerveza" 
+                                 style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
+                        </div>
+                        <h6 class="category-title">Cervezas</h6>
+                        <p class="category-count">Ver productos <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="products-section">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title-simple">Compra Vapeadores</h2>
+                <a href="#" class="link-ver-todo">Ver todo</a>
+            </div>
+            <div class="row" id="contenedor-productos"></div>
+        </div>
+    </section>
+
+    <section class="brands-slider-section py-5">
+        <div class="container">
+            
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title-simple mb-0">Marcas que manejamos</h2>
+                
+                <div class="brand-controls">
+                    <button class="btn-brand-nav" onclick="scrollMarcas('left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn-brand-nav" onclick="scrollMarcas('right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="brand-scroll-container" id="brandScroll">
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Johnnie_Walker_logo.svg/1200px-Johnnie_Walker_logo.svg.png" alt="Johnnie Walker">
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jack_Daniel%27s_logo.svg/2560px-Jack_Daniel%27s_logo.svg.png" alt="Jack Daniels">
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Jose_Cuervo_logo.svg" alt="Jose Cuervo">
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Corona_Extra_logo_2022.svg/2560px-Corona_Extra_logo_2022.svg.png" alt="Corona">
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Absolut_Vodka_Logo.svg/1200px-Absolut_Vodka_Logo.svg.png" alt="Absolut">
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Baileys_Irish_Cream_logo.svg/2560px-Baileys_Irish_Cream_logo.svg.png" alt="Baileys">
+                </div>
+                <div class="brand-item">
+                    <img src="https://1000logos.net/wp-content/uploads/2020/09/Buchanans-Logo.png" alt="Buchanans">
+                </div>
+                <div class="brand-item">
+                    <img src="" alt="Old Parr">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-clean py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="benefit-icon-green mb-3">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h6 class="fw-bold">Calidad y servicio</h6>
+                    <p class="small text-muted">Productos verificados y auténticos</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="benefit-icon-green mb-3">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h6 class="fw-bold">Despachos en máximo*</h6>
+                    <p class="small text-muted">30 minutos en Aranjuez</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="benefit-icon-green mb-3">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h6 class="fw-bold">Atención 24/7 Garantizada</h6>
+                    <p class="small text-muted">Siempre disponibles para ti</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="benefit-icon-green mb-3">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h6 class="fw-bold">Productos exclusivos</h6>
+                    <p class="small text-muted">Las mejores marcas premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestra Guía de Cocteles -->
+    <section class="cocktail-guide py-5">
+        <div class="container text-center">
+            <h2 class="section-title-simple mb-4">#Nuestra guía de cocteles</h2>
+            <p class="text-muted mb-4">Descubre recetas increíbles</p>
+            <button class="btn btn-outline-success rounded-pill px-4">Explorar recetas</button>
+        </div>
+    </section>
+
+    <!-- Footer Moderno -->
+    <footer class="footer-dark">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5 class="footer-heading">La Licorera.com</h5>
+                    <p class="small text-white-50">La mejor opción para tus celebraciones en Medellín.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <h6 class="footer-subtitle">Despachos para todos</h6>
+                    <p class="small text-white-50">Entregamos en toda la ciudad</p>
+                    <p class="small"><i class="fas fa-phone me-2"></i>300 200 5400</p>
+                </div>
+                
+                <div class="col-md-3">
+                    <h6 class="footer-subtitle">Acceso de miembros</h6>
+                    <p class="small"><a href="login.html" class="text-white-50 text-decoration-none">Iniciar sesión</a></p>
+                </div>
+                
+                <div class="col-md-3">
+                    <h6 class="footer-subtitle">Horario de contacto</h6>
+                    <p class="small text-white-50">Lunes a Viernes:</p>
+                    <p class="small text-white-50">24/7 Disponible</p>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small text-white-50 mb-0">
+                        <a href="#" class="text-white-50 text-decoration-none me-3">Términos y condiciones</a>
+                        <a href="#" class="text-white-50 text-decoration-none">Política de privacidad</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="small text-white-50 mb-0">
+                        © 2025 LA LICORERA 24/7 • Todos los derechos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a  class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+        <div class="offcanvas-header bg-light">
+            <h5 class="offcanvas-title fw-bold">
+                <i class="fas fa-shopping-bag me-2 text-success"></i>Tu Carrito
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column p-0">
+            <div id="lista-carrito" class="flex-grow-1 p-3"></div>
+            <div class="border-top p-3 bg-light">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold">Total:</span>
+                    <span class="fw-bold fs-5 text-success" id="carrito-total">$0</span>
+                </div>
+                <div id="checkout-btn-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/main.js"></script>
+</body>
+</html>

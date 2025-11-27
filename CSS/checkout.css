@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #9D4EDD;
+    --secondary-color: #C77DFF;
+    --dark-bg: #10002B;
+    --border-color: #E0AAFF;
+    --success-color: #2ecc71;
+}
+
+.checkout-header {
+    background: white;
+    box-shadow: 0 4px 15px rgba(60, 9, 108, 0.05);
+}
+
+.badge.rounded-circle {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--primary-color) !important;
+}
+
+.checkout-section {
+    background: white;
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.checkout-section:hover {
+    box-shadow: 0 10px 30px rgba(60, 9, 108, 0.08);
+    border-color: var(--secondary-color);
+}
+
+.delivery-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.delivery-card {
+    display: block;
+    cursor: pointer;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    padding: 18px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.delivery-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--primary-color);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.delivery-card:hover {
+    background-color: #F3E5F5;
+    transform: translateX(5px);
+    border-color: var(--secondary-color);
+}
+
+.delivery-card:has(input:checked) {
+    border-color: var(--primary-color);
+    background-color: #F8F0FC;
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.15);
+}
+
+.delivery-card:has(input:checked)::before {
+    transform: scaleY(1);
+}
+
+.delivery-card input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: rgba(157, 78, 221, 0.1);
+    color: var(--primary-color);
+}
+
+.delivery-card:hover .icon-box {
+    transform: scale(1.1);
+    background: var(--primary-color);
+    color: white;
+}
+
+#shippingForm .form-label {
+    font-weight: 600;
+    color: var(--dark-bg);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+#shippingForm .form-control {
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+
+#shippingForm .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(157, 78, 221, 0.1);
+    background: white;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-option {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.payment-option:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 12px rgba(157, 78, 221, 0.1);
+}
+
+.payment-option.selected {
+    border-color: var(--primary-color);
+    background-color: #F8F0FC;
+}
+
+.form-check-input {
+    accent-color: var(--primary-color);
+}
+
+.checkout-summary {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 10px 30px rgba(60, 9, 108, 0.08);
+}
+
+.checkout-products-scroll::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.checkout-product-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+.checkout-totals {
+    background: #F3E5F5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.checkout-total-row.final {
+    border-top: 2px solid rgba(157, 78, 221, 0.2);
+}
+
+.checkout-total-row.final .total-amount {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.btn-confirm-order {
+    background: linear-gradient(135deg, #7B2CBF, #9D4EDD);
+    color: white;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.3);
+    text-transform: uppercase;
+}
+
+.btn-confirm-order:hover {
+    background: linear-gradient(135deg, #5A189A, #7B2CBF);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(123, 44, 191, 0.5);
+}
+
+.security-badge {
+    background: #e8f5e9;
+    border-radius: 8px;
+    color: #2ecc71;
+}
+
+.loading-overlay {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.loading-spinner {
+    border-top: 5px solid var(--primary-color);
+}
