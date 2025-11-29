@@ -6,14 +6,14 @@ const PRODUCTOS_DB = [
     { id: 2, nombre: "Ron Viejo de Caldas Tradicional", precio: 32000, categoria: "Media", imagen: "img/rvctrad.jpg", stock: 8 },
     { id: 3, nombre: "Ron Viejo de Caldas Esencial", precio: 26000, categoria: "Media", imagen: "img/rcvEsencial.jpg", stock: 12 },
     { id: 4, nombre: "Ron Viejo de Caldas Carta De Oro", precio: 54000, categoria: "Media", imagen: "img/rvc8años.jpg", stock: 5 },
-    { id: 5, nombre: "Aguardiente Amarillo De Manzanares", precio: 33000, categoria: "Media", imagen: "img/Manzanares.jpg", stock: 25 },
+    { id: 5, nombre: "Aguardiente Amarillo De Manzanares", precio: 33000, categoria: "Media", imagen: "img/catalogo/Manzanares.jpg", stock: 25 },
     { id: 6, nombre: "Aguardiente Antioqueño Azúl", precio: 28900, categoria: "Media", imagen: "img/azul.jpg", stock: 18 },
     { id: 7, nombre: "Aguardiente Antioqueño Real", precio: 44000, categoria: "Botella", imagen: "img/botreal.jpg", stock: 7 },
     { id: 8, nombre: "Whisky Buchanan's Deluxe", precio: 180000, categoria: "Botella", imagen: "img/buchanas.webp", stock: 6 },
     { id: 9, nombre: "Black & White", precio: 33000, categoria: "Media", imagen: "img/black.jpg", stock: 6 },
-    { id: 10, nombre: "Vodka Smirnoff Tamarindo Picante", precio: 60000, categoria: "Botella", imagen: "img/tamarindo.jpg", stock: 6 },
+    { id: 10, nombre: "Vodka Smirnoff Tamarindo Picante", precio: 60000, categoria: "Botella", imagen: "img/catalogo/tamarindo.jpg", stock: 6 },
     { id: 11, nombre: "Vodka Smirnoff Lulo", precio: 30000, categoria: "Media", imagen: "img/lulo.jpg", stock: 6 },
-    { id: 12, nombre: "Aguardiente Antioqueño Verde Caja", precio: 51000, categoria: "Litro", imagen: "img/tetraverde.jpg", stock: 6 }
+    { id: 12, nombre: "Aguardiente Antioqueño Verde Caja", precio: 51000, categoria: "Litro", imagen: "img/catalogo/tetraverde.jpg", stock: 6 }
 ];
 
 // -------------------------

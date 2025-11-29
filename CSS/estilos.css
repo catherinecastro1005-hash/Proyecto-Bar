@@ -64,26 +64,6 @@ body {
     white-space: nowrap;
 }
 
-/* Botón pequeño */
-.top-bar-btn {
-    padding: 12px 12px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    background: #0b000e;  /* Morado premium */
-    color: #d0bad3;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.25s ease;
-    white-space: nowrap;
-    align-items: right;
-}
-
-.top-bar-btn:hover {
-    background: #d777f2;
-    transform: translateY(-2px);
-}
-
-
 .main-header-simple {
     background: #fff;
     padding: 18px 0;
@@ -852,6 +832,43 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* ---- ESTILO BASE ---- */
+.float-btn {
+    position: fixed;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.55rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-decoration: none;
+    transition: 0.25s ease;
+    z-index: 999;
+}
+
+/* ---- PQR ---- */
+.pqr-float {
+    bottom: 95px;
+    background: #0095ff;
+}
+
+.pqr-float:hover {
+    background: #0077cc;
+}
+
+/* ---- WHATSAPP ---- */
+.whatsapp-float {
+    bottom: 25px;
+    background: #25d366;
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5d;
+}
 
 @media (max-width: 768px) {
     .main-logo {

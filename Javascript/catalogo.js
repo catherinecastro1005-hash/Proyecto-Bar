@@ -18,7 +18,12 @@ const products = [
 
     { id: 11, title: "Cerveza Corona 355ml", brand: "Corona", category: "Cerveza", price: 4500, img: "img/catalogo/corona.jpg" },
     { id: 12, title: "Cerveza Heineken 330ml", brand: "Heineken", category: "Cerveza", price: 5000, img: "img/catalogo/heineken.jpg" },
-];
+    { id: 13, title: "Bacardí Blanco 750ml", brand: "Smirnoff sabor Tamarindo", category: "Vodka", price: 57000, img: "img/catalogo/tamarindo.jpg" },
+    { id: 14, title: "Bacardí Añejo 750ml", brand: "Aguardiente Antioqueño verde", category: "Aguardiente", price: 67000, img: "img/catalogo/tetraverde.jpg" },
+
+    { id: 15, title: "Vaper 5000 puf", brand: "Vaps", category: "Vaps", price: 24500, img: "img/catalogo/vaper.png" },
+    { id: 16, title: "Aguadiente Amarillo Manzanares", brand: "Amarillo", category: "Aguardiente", price: 5000, img: "img/catalogo/Manzanares.jpg" },
+];  
 
 // ------------------------------
 // Cargar productos
