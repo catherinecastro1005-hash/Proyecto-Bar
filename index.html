@@ -15,83 +15,148 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
-<body>
+<body>  <!-- Top Bar Tipo Menú -->
+    <!-- Top Bar -->
+<div class="top-menu-bar">
+    <div class="container top-bar-flex">
+        <span class="top-bar-text">🍸 Productos verificados Comercialización responsable y legal. 🍸</span>
+    </div>
+</div>
 
-    <!-- Top Bar Tipo Menú -->
-    <div class="top-menu-bar">
-        <div class="container">
-            <ul class="top-menu">
-                <li><a href="catalogo.html">VAPEADORES</a></li>
-                <li><a href="catalogo.html">SNACK</a></li>
-                <li><a href="catalogo.html">LICORES</a></li>
-                <li><a href="catalogo.html">CERVEZAS</a></li>
-                <li><a href="catalogo.html">CIGARRILLOS</a></li>
-                <li><a href="catalogo.html">OFERTAS</a></li>
-            </ul>
+
+<!-- Header Principal -->
+<header class="main-header-simple">
+    <div class="container">
+        <div class="row align-items-center py-3">
+
+            <!-- Logo -->
+            <div class="col-md-2">
+                <a href="index.html">
+                    <img src="img/logo.ico.png" alt="Licorera Aranjuez 24/7" class="img-fluid main-logo">
+                </a>
+            </div>
+
+            <!-- Buscador Central -->
+            <div class="col-md-7">
+                <div class="search-wrapper">
+                    <input type="search" class="form-control search-input-main" placeholder="Buscar..." aria-label="Buscar productos">
+                </div>
+            </div>
+
+            <!-- Iconos -->
+            <div class="col-md-3 text-end">
+                <div class="header-actions">
+
+                    <button class="icon-btn" aria-label="Notificaciones">
+                        <i class="fas fa-bell"></i>
+                    </button>
+
+                    <button class="icon-btn" aria-label="Favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+
+                    <button class="icon-btn icon-cart" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-label="Carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count-badge" class="cart-badge">0</span>
+                    </button>
+
+                    <button class="icon-btn" aria-label="Perfil" onclick="window.location.href='registro.html'">
+                        <i class="far fa-user-circle"></i>
+                    </button>
+
+                </div>
+            </div>
+
         </div>
     </div>
+</header>
 
-    <!-- Header Principal -->
-    <header class="main-header-simple">
-        <div class="container">
-            <div class="row align-items-center py-3">
-                <!-- Logo -->
-                <div class="col-md-2">
-    <a href="index.html">
-        <img src="img/logo.ico.png" alt="Licorera Aranjuez 24/7" class="img-fluid main-logo">
-    </a>
+
+    <section class="promo-section position-relative">
+  
+    <div id="mainPromoCarousel" class="carousel slide promo-full-screen" data-bs-ride="carousel" data-bs-pause="false">
+    
+    <!-- INDICADORES -->
+    <div class="carousel-indicators mb-5">
+        <button type="button" data-bs-target="#mainPromoCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#mainPromoCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainPromoCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- CONTENIDO DEL CARRUSEL -->
+    <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active" data-bs-interval="3500">
+            <img src="img/Bannerprincipal/bannerimg1.png" class="promo-bg-img" alt="Fiesta">
+
+            <div class="promo-overlay-gradient">
+                <div class="text-white promo-text-content">
+                    <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill text-uppercase tracking-wide">
+                        ¡Disponible siempre!
+                    </span>
+                    <h2 class="display-3 fw-bold mb-3" style="font-family: 'Kaushan Script', cursive;">
+                        La Fiesta No Para <br>
+                         ¡Estamos 24/7! 🎉🕛
+                    </h2>
+                    <p class="lead mb-4 fs-4 text-white-50">
+                        Licores a Tu Puerta en Minutos! 🍾⚡ <br>
+                    </p>
+                    <a href="catalogo.html" class="btn btn-light btn-lg rounded-pill fw-bold px-5 shadow-lg">
+                        MIRAR CATÁLOGO <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item" data-bs-interval="3500">
+            <img src="img/Bannerprincipal/banner2.jpg" class="promo-bg-img" alt="Whisky">
+
+            <div class="promo-overlay-gradient">
+                <div class="text-white promo-text-content">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill text-uppercase tracking-wide">
+                        exclusivos
+                    </span><br><br>
+                    <h2 class="display-3 fw-bold mb-3" style="font-family: 'Kaushan Script', cursive;">Promos exclusivas hoy <br> ¡Hasta 20% OFF en tus licores favoritos!</h2>
+                    <p class="lead mb-4 fs-4 text-white-50">
+                        <span class="text-white">⏳ Solo por tiempo limitado • 🚚 Entrega rápida • 🛡️ 100% legal</span>
+                    </p>
+                    <a href="catalogo.html" class="btn btn-light btn-lg rounded-pill fw-bold px-5 shadow-lg">
+                        VER CATÁLOGO <i class="fas fa-glass-whiskey ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-item" data-bs-interval="3500">
+            <img src="img/Bannerprincipal/vaperbanner.webp" class="promo-bg-img" alt="Vape Zone">
+
+            <div class="promo-overlay-gradient">
+                <div class="text-white promo-text-content">
+                    <span class="badge bg-success mb-3 px-3 py-2 rounded-pill text-uppercase tracking-wide">
+                        Vape Zone
+                    </span>
+                    <h2 class="display-3 fw-bold mb-3" style="font-family: 'Kaushan Script', cursive;">
+                        Descubre el Vapor que Va Contigo 🔥
+                    </h2>
+                    <p class="lead mb-4 fs-4 text-white-50">
+                        ⚡💨 Vapor Intenso, Sabores Únicos. <br>
+                        🍇💨 Explora Sabores, Vive la Experiencia.<br>
+                        💨🛡️ Vapers Originales y Confiables para Adultos. <br>
+                        <span class="text-white"> 100% Originales — Máxima Duración y Sabor Garantizado✨</span>
+                    </p>
+                    <a href="catalogo.html" class="btn btn-light btn-lg rounded-pill fw-bold px-5 shadow-lg">
+                        EXPLORAR SABORES <i class="fas fa-cloud ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
-                
-                <!-- Buscador Central -->
-                <div class="col-md-7">
-                    <div class="search-wrapper">
-                        <input type="search" 
-                               class="form-control search-input-main" 
-                               placeholder="Buscar..."
-                               aria-label="Buscar productos">
-                    </div>
-                </div>
 
-                <!-- Iconos de Usuario -->
-                <div class="col-md-3 text-end">
-                    <div class="header-actions">
-                        <button class="icon-btn" aria-label="Notificaciones">
-                            <i class="fas fa-bell"></i>
-                        </button>
-                        <button class="icon-btn" aria-label="Favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <button class="icon-btn" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-label="Carrito">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span id="cart-count-badge" class="cart-badge">0</span>
-                        </button>
-                        <button class="icon-btn" aria-label="Perfil" onclick="window.location.href='registro.html'">
-                            <i class="far fa-user-circle"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section con Texto e Imagen -->
-    <section class="hero-simple">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="hero-text-box">
-                        <h1 class="hero-title-handwritten">
-                            Los Mejores Licores<br>
-                            de Medellín
-                        </h1>
-                        <div class="hero-catalog-btn">
-                            <a href="catalogo.html" class="btn-explore">Explora Nuestro Catálogo</a>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-        </div>
-    </section>
 
     <!-- Banner Promocional Grande con Marcas -->
      <section class="promo-brands-section my-5">
@@ -122,7 +187,7 @@
                             </div>
                             <div class="col-md-3 col-6">
                                 <div class="brand-card">
-                                    <img src="img/absolut.png" alt="Miniaturas">
+                                    <img src="img/Banner2/absolut.png" alt="Miniaturas">
                                     <div class="brand-overlay">
                                         <h3>Absolut Vodka</h3>
                                         <p>ORIGINAL</p>
@@ -154,7 +219,7 @@
                         <div class="row g-0">
                             <div class="col-md-3 col-6">
                                 <div class="brand-card">
-                                    <img src="img/amarillo.png" alt="AMARILLO">
+                                    <img src="img/Banner2/amarillo.png" alt="AMARILLO">
                                     <div class="brand-overlay">
                                         <h3>AGUARDIENTE AMARILLO</h3>
                                         <p>DE MANZANARES</p>
@@ -220,7 +285,7 @@
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="category-item" onclick="filtrarCategoria('Vodka')">
                         <div class="category-circle-large p-0 overflow-hidden">
-                            <img src="img/aguardiente.png" 
+                            <img src="img/Categorias/aguardiente.png" 
                                  alt="aguardientes" 
                                  style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
                         </div>
@@ -268,7 +333,7 @@
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="category-item" onclick="filtrarCategoria('Cerveza')">
                         <div class="category-circle-large p-0 overflow-hidden">
-                            <img src="img/vinos.png"
+                            <img src="img/Categorias/vinos.png"
                                  alt="Vinos" 
                                  style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
                         </div>
@@ -304,7 +369,7 @@
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="category-item" onclick="filtrarCategoria('Cerveza')">
                         <div class="category-circle-large p-0 overflow-hidden">
-                            <img src="img/Ginebra.png"
+                            <img src="img/Categorias/Ginebra.png"
                                  alt="Vinos" 
                                  style="width: 100%; height: 100%; object-fit: cover; padding: 0;">
                         </div>
@@ -343,166 +408,165 @@
     <!-- Productos Destacados -->
     <section class="products-section">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="title-box">
                 <h2 class="section-title-simple">Nuestros Productos</h2>
-                <a href="catalogo.html" class="link-ver-todo">Ver todo</a>
+                <a href="catalogo.html" class="link-ver-todo">Ver todo →</a>
             </div>
-            <div class="row" id="contenedor-productos"></div>
-        </div>
-    </section>
+        <div class="product-grid" id="contenedor-productos"></div>
+    </div>
+</section>
 
-    <section class="brands-slider-section py-5">
-        <div class="container">
-            
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="section-title-simple mb-0">Marcas que manejamos</h2>
-                
-                <div class="brand-controls">
-                    <button class="btn-brand-nav" onclick="scrollMarcas('left')">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="btn-brand-nav" onclick="scrollMarcas('right')">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="brand-scroll-container" id="brandScroll">
-                <div class="brand-item">
-                    <img src="img/absolutlogo.png" alt="Absolut">
-                </div>
-                <div class="brand-item">
-                    <img src="img/amarillologo.png" alt="Amarillo">
-                </div>
-                <div class="brand-item">
-                    <img src="img/bacardi.logo.png" alt="Bacardí">
-                </div>
-                <div class="brand-item">
-                    <img src="img/baileyslogo.png" alt="Baileys">
-                </div>
-                <div class="brand-item">
-                    <img src="img/donjuliologo.png" alt="donjulio">
-                </div>
-                <div class="brand-item">
-                    <img src="img/jacklogo.png" alt="kack">
-                </div>
-                <div class="brand-item">
-                    <img src="img/josecuervologo.png" alt="josecuervo">
-                </div>
-                <div class="brand-item">
-                    <img src="img/logobuca.png" alt="logobuca">
-                </div>
-                <div class="brand-item">
-                    <img src="img/oldlogo.png" alt="old">
-                </div>
-                <div class="brand-item">
-                    <img src="img/roncaldaslogo.png" alt="Roncaldas">
-                </div>
-                <div class="brand-item">
-                    <img src="img/Ronmedellinlogo.png" alt="RonMedellin">
-                </div>
-                <div class="brand-item">
-                    <img src="img/smirnofflogo.png" alt="Smirnoff">
-                </div>
+<section class="brands-slider-section py-5 bg-white border-top">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5"> 
+            <div>
+            <h2 class="fw-bold display-6 mb-0" style="color: var(--text-dark);">Tus marcas favoritas</h2>
             </div>
         </div>
-    </section>
+        <div class="brand-scroll-container-premium" id="brandScrollPremium">
+            <div class="brand-item-premium">
+                <img src="img/Marcas/absolutlogo.png" alt="Absolut">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/amarillologo.png" alt="Amarillo">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/bacardi.logo.png" alt="Bacardí">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/baileyslogo.png" alt="Baileys">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/donjuliologo.png" alt="donjulio">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/jacklogo.png" alt="kack">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/josecuervologo.png" alt="josecuervo">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/logobuca.png" alt="logobuca">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/oldlogo.png" alt="old">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/roncaldaslogo.png" alt="Roncaldas">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/Ronmedellinlogo.png" alt="RonMedellin">
+            </div>
+            <div class="brand-item-premium">
+                <img src="img/Marcas/smirnofflogo.png" alt="Smirnoff">
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Benefits Section -->
-    <section class="benefits-clean py-5 bg-light">
-        <div class="container">
-            <div class="row g-4 text-center">
-                <div class="col-6 col-md-3">
-                    <div class="benefit-icon-green mb-3">
-                        <i class="fas fa-shield-check"></i>
-                    </div>
-                    <h6 class="fw-bold">Calidad y servicio</h6>
-                    <p class="small text-muted">Productos verificados y auténticos</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="benefit-icon-green mb-3">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                    <h6 class="fw-bold">Despachos en máximo*</h6>
-                    <p class="small text-muted">30 minutos en Aranjuez</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="benefit-icon-green mb-3">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h6 class="fw-bold">Atención 24/7 Garantizada</h6>
-                    <p class="small text-muted">Siempre disponibles para ti</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="benefit-icon-green mb-3">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <h6 class="fw-bold">Productos exclusivos</h6>
-                    <p class="small text-muted">Las mejores marcas premium</p>
+    <section class="benefits-premium py-5">
+    <div class="container">
+        <div class="row g-4 text-center">
+
+            <div class="col-6 col-md-3">
+                <div class="benefit-box">
+                    <span class="benefit-emoji">🛡️</span>
+                    <h6 class="benefit-title">Calidad y servicio</h6>
+                    <p class="benefit-text">Productos verificados y auténticos</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Nuestra Guía de Cocteles -->
-    <section class="cocktail-guide py-5">
-        <div class="container text-center">
-            <h2 class="section-title-simple mb-4">#Nuestra guía de cocteles</h2>
-            <p class="text-muted mb-4">Descubre recetas increíbles</p>
-            <button class="btn btn-outline-success rounded-pill px-4">Explorar recetas</button>
-        </div>
-    </section>
-
-    <!-- Footer Moderno -->
-    <footer class="footer-dark">
-        <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <h5 class="footer-heading">La Licorera.com</h5>
-                    <p class="small text-white-50">La mejor opción para tus celebraciones en Medellín.</p>
-                    <div class="social-icons mt-4">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <h6 class="footer-subtitle">Despachos para todos</h6>
-                    <p class="small text-white-50">Entregamos en toda la ciudad</p>
-                    <p class="small"><i class="fas fa-phone me-2"></i>300 200 5400</p>
-                </div>
-                
-                <div class="col-md-3">
-                    <h6 class="footer-subtitle">Acceso de miembros</h6>
-                    <p class="small"><a href="login.html" class="text-white-50 text-decoration-none">Iniciar sesión</a></p>
-                </div>
-                
-                <div class="col-md-3">
-                    <h6 class="footer-subtitle">Horario de contacto</h6>
-                    <p class="small text-white-50">Lunes a Viernes:</p>
-                    <p class="small text-white-50">24/7 Disponible</p>
+            <div class="col-6 col-md-3">
+                <div class="benefit-box">
+                    <span class="benefit-emoji">⚡</span>
+                    <h6 class="benefit-title">Despachos en máximo*</h6>
+                    <p class="benefit-text">30 minutos en Aranjuez</p>
                 </div>
             </div>
-            
-            <hr class="border-secondary my-4">
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="small text-white-50 mb-0">
-                        <a href="#" class="text-white-50 text-decoration-none me-3">Términos y condiciones</a>
-                        <a href="#" class="text-white-50 text-decoration-none">Política de privacidad</a>
-                    </p>
+
+            <div class="col-6 col-md-3">
+                <div class="benefit-box">
+                    <span class="benefit-emoji">⏰</span>
+                    <h6 class="benefit-title">Atención 24/7 Garantizada</h6>
+                    <p class="benefit-text">Siempre disponibles para ti</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="small text-white-50 mb-0">
-                        © 2025 LA LICORERA 24/7 • Todos los derechos reservados
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="benefit-box">
+                    <span class="benefit-emoji">💎</span>
+                    <h6 class="benefit-title">Productos exclusivos</h6>
+                    <p class="benefit-text">Las mejores marcas premium</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-neutral">
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <!-- SOBRE LA MARCA -->
+            <div class="col-md-3">
+                <h5 class="footer-title">La Licorera Aranjuez<br>24 Horas</h5>
+                <p class="footer-text">
+                    Llevamos tus bebidas favoritas a la puerta de tu casa en tiempo récord.
+                </p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- DESPACHOS / CONTACTO -->
+            <div class="col-md-3">
+                <h6 class="footer-subtitle">Despachos & Cobertura</h6>
+                <p class="footer-text">Envíos rápidos en Medellín y zonas cercanas.</p>
+                <p class="footer-text"><i class="fas fa-phone me-2"></i>300 200 5400</p>
+            </div>
+
+            <!-- ACCESO -->
+            <div class="col-md-3">
+                <h6 class="footer-subtitle">Acceso rápido</h6>
+                <p><a href="login.html" class="footer-link">Iniciar sesión</a></p>
+                <p><a href="#" class="footer-link">Catálogo completo</a></p>
+                <p><a href="#" class="footer-link">Preguntas frecuentes</a></p>
+            </div>
+
+            <!-- HORARIO / LEGALES / DERECHO RESERVADOS -->
+            <div class="col-md-3">
+                <h6 class="footer-subtitle">Horario de atención</h6>
+                <p class="footer-text">Atención continua:</p>
+                <p class="footer-text">24 horas Todos los días</p>
+
+                <div class="footer-legal mt-3">
+                    <p class="footer-text-small">
+                        © 2025 LA LICORERA ARANJUEZ 24/7<br>Todos los derechos reservados.
                     </p>
                 </div>
             </div>
+
         </div>
-    </footer>
+
+        <hr class="footer-divider">
+
+        <!-- AVISO LEGAL -->
+        <div class="text-center mt-3">
+            <p class="footer-warning">
+                EL EXCESO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD.  
+                PROHÍBASE EL EXPENDIO DE BEBIDAS EMBRIAGANTES A MENORES DE EDAD.
+            </p>
+                 <a href="https://syctrace.org/" class="top-bar-btn">Válida tu botella</a>
+        </div>
+    </div>
+</footer>
+
+
 
     <!-- WhatsApp Float -->
     <a  class="whatsapp-float" 
